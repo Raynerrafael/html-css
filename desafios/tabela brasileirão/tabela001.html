@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tabela do Brasileirão</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+
+thead {
+  background-color: #0e5ec5;
+  color: white;
+}
+
+th, td {
+  text-align: center;
+  padding: 12px 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #e0f0ff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 8px 6px;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .table-wrapper {
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Tabela do Brasileirão 2025</h1>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Pos</th>
+            <th>Time</th>
+            <th>Pts</th>
+            <th>PJ</th>
+            <th>VIT</th>
+            <th>EMP</th>
+            <th>DER</th>
+            <th>GP</th>
+            <th>GC</th>
+            <th>SG</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Palmeiras</td>
+            <td>45</td>
+            <td>20</td>
+            <td>14</td>
+            <td>3</td>
+            <td>3</td>
+            <td>38</td>
+            <td>18</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Flamengo</td>
+            <td>43</td>
+            <td>20</td>
+            <td>13</td>
+            <td>4</td>
+            <td>3</td>
+            <td>36</td>
+            <td>21</td>
+            <td>15</td>
+          </tr>
+          <!-- Adicione mais linhas conforme necessário -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
