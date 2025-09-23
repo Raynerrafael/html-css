@@ -78,6 +78,7 @@ main::after {
     text-decoration: overline;
 }
 
+
     img#phone{ display: none; }
 img#tablet{ display: none; }
 img#print{ display: block; }
