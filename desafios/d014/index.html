@@ -5,12 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio de Grid-layout</title>
     <style>
+
+      * {
+         box-sizing: border-box;
+         margin: 0;
+      }
+
+
         div.container {
             display: grid;
             border: 2px solid black;
-            grid-template-rows: 100px 100px 100px 100px;
-            grid-template-columns: auto auto auto;
+            grid-template-rows: 80px 40px 200px 40px;
+            grid-template-columns: 1fr 15px 500px;
+            gap: 5px;
         }
+
          div.header {
             background-color: rgba(255, 0, 0, 0.49);
             border: 1px dashed black;
@@ -19,6 +28,7 @@
             grid-row-end: 2;
             grid-column-start: 1;
             grid-column-end: 4;
+            
          }
 
          div.menu {
